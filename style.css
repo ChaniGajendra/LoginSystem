@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(204, 152, 152, 0.7), #899ad5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    left: 0;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+form{
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input{
+    width: 60%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 2px;
+}
+    input:focus~label,
+    input:valid~label{
+        top: -35px;
+        font-size: 14px;
+    }
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 24%;
+    margin-right: 330px;
+    gap: 8px;
+}
+
+@media (max-width: 767px) {
+    form {
+      max-width: 100%;
+      padding: 0 20px;
+      font-size: 12px;
+      transition: 0.2s;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+  
+    input,
+    label,
+    button {
+      padding: 8px; 
+    }
+    .row1{
+        display: flex;
+        position: absolute;
+        margin-top: 320px;
+        font-size: 10px;
+        margin-left: 80px;
+
+    }
+    input:focus~label{
+        font-size: 10px;
+        top: -20px;
+    }
+  }
